@@ -1,0 +1,204 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dace0e6889.js" crossorigin="anonymous"></script>
+    <title>SMART WATCH</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        #logo{
+            width:200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #main-pic{
+            width: 450px;
+            padding-top: 50px;
+            
+        }
+        #pic{
+            position: relative;
+        }
+        #pulse{
+            position:absolute;
+            color: red;
+            font-size: 50px;
+            top:300px;
+            left:340px;
+            animation-name: scaling;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+        }
+        #pulsetext{
+            position:absolute;
+            color: red;
+            font-size:30px;
+            top:350px;
+            left:350px;
+        }
+        h1{
+            text-align: left;
+            font-size: 40px;
+        }
+        h2{
+            text-align: left;
+        }
+        p{
+            text-align: left;
+            font-size:20px;
+        }
+        .text{
+            padding-top:50px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+        }
+        h3{
+            font-size: 30px;
+            color: gray;
+        }
+        #icons{
+            display: flex;
+            justify-content: left;
+        }
+        .icon{
+            width:60px;
+            margin-right:15px;
+            height: 50px;
+            border: none;
+            border-radius: 10px;
+        }
+        #button{
+            display: flex;
+            justify-content: left;
+        }
+        button
+        {
+            font-size:16px;
+            margin-right: 40px;
+            border-radius: 5px;
+            background-color: rgb(207, 196, 196);
+            padding: 5px;
+            border: 3px solid rgb(207, 196, 196) ;
+        }
+        #text{
+            position:absolute;
+            color:white;
+            font-size:30px;
+            top:320px;
+            left:315px;
+        
+        }
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        @keyframes scaling{
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        @media (maxwidth:500px)
+        {
+            #navg{
+                width: 100%;
+            }
+            #main-pic{
+            width: 300px;
+            padding-top: 50px;
+            padding-left: 30px;
+            }
+            .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #icons{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        }  
+        
+            
+        
+    </style>
+</head>
+<body>
+    <header>
+            <div id="navg" style=" background-color: rgba(9, 22, 51, 0.886);">
+                <img id="logo"src="image/amazon_logo.png"> 
+            </div>
+        
+            <div class="main">
+                <div id="pic">
+                    <img id="main-pic" src="image/black.png">
+                </div>
+                <div class="hide" id="pulsediv">
+                    <i id="pulse" class="fa-solid fa-heart-pulse"></i>
+                    <h2 id="pulsetext">78</h2>
+                </div>
+                <div class="show">
+                     <p id="text"></p>
+                </div>
+                <div class="text">
+                    <h1>FitBit19 - The Smartest Watch</h1>
+                    <br>
+                    <h2>At Fitbit, health & fitness come first </h2>
+                    <p>Each Fitbit product includes these core features and more to inspire<Br> you on your journey.</p>
+                        <br>
+                    <h3>Select Color</h3>  
+                    <br>
+                    <div id="icons">
+                        <div style="background-color: black;" class="icon" id="black">
+                            
+                        </div>
+                        <div style="background-color:red;" class="icon" id="red">
+                            
+                        </div>
+                        <div style="background-color: #565681;" class="icon" id="blue">
+                            
+                        </div>
+                        <div style="background-color:#e9c7be;" class="icon" id="pink">
+                            
+                        </div>
+                        <div style="background-color: #8a5362;" class="icon" id="purple">
+                    
+                        </div>
+                        
+                    </div>
+                    <br>
+                    <h3>Features</h3>
+                    <br>
+                    <div id="button"> 
+                        <div  id="time-btn">
+                            <button type="button">Time</button>
+                        </div>
+                        
+                        <div id="heartrate-btn">
+                            <button type="button">HeartRate</button>
+                        </div>
+                    </div>
+                    <br>
+                    <button style="font-size:16px;padding: 8px;background-color: orange;border:3px solid orange;" id="buy-now button" type="button">BUY NOW</button>
+                    
+                </div>
+            </div>
+    </header>
+    <script src="index.js" ></script>
+</body>
+</html>
